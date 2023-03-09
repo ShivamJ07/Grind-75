@@ -10,7 +10,6 @@ def check_valid_palindrome(s:str) -> bool:
     
     start = 0
     end = len(s) - 1
-    print(s[start], s[end])
     while start < end:
         start_char = s[start].lower()
         end_char = s[end].lower()
