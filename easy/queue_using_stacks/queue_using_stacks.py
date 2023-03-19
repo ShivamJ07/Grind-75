@@ -7,7 +7,6 @@
 # Space complexity: O(n) - where n is number of elements in the queue, it is distributed among two lists
 # Time complexity: Amortized O(1) - For a single pop operation, worst case is O(n) if s2 is empty as we need to pop from s1 and append to s2, so time taken is linearly proportional to number of elements in s1 or n. Best case is O(1) if s2 is non-empty as standard list pop operatio is O(1), so on average, the amortized time complexity is O(1) as each element would only be transferred from s1 to s2 once before it is popped 
 
-
 class MyQueue:
     def __init__(self):
         self.s1 = []
