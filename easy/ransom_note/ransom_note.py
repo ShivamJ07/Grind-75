@@ -2,6 +2,7 @@ import collections
 
 # First check if length of ransom note is greater than magazine, then it is impossible to create ransom note as not sufficient distinct letter in magazine
 # Time complexity
+# Space complexity
 
 def canConstruct(ransomNote: str, magazine: str) -> bool:
     if  len(ransomNote) > len(magazine):
